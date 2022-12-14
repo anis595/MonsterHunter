@@ -33,19 +33,22 @@ body {
 
 .modal {
   width: 95%;
-  max-width: 500px;
+  max-width: 600px;
   padding: 30px;
   min-width: 300px;
   background: #fff;
-  top: 40%;
+  top: 50%;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 500px;
+  height: 750px;
   border-radius: 10px;
   background-image: url(./public/image/2.jpg);
   font-family: "Roboto", sans-serif;
+  font-size: 20px;
   text-align: center;
+  max-height: 100%;
+overflow-y: auto;
 }
 
 .close-modal {
@@ -73,6 +76,22 @@ body {
   line-height: 1.5;
 }
 
+.modal img{
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  
+} 
+
+.modal iframe{
+  padding-top: 20px;
+}
+.combo{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
 .navBar {
   /* position: fixed; */
   width: 100%;
@@ -221,7 +240,7 @@ h1 {
   transition: 0.3s;
 }
 .grid-item:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 
   cursor: pointer;
 }
@@ -260,7 +279,3 @@ i:hover {
   transform: scale(1.3);
 }
 
-#longSword {
-  height: 300px;
-  
-}
