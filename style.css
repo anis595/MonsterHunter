@@ -340,12 +340,17 @@ i:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- background-image: linear-gradient(112.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(176,173,69) 60%, rgb(176,173,69) 88%,rgb(112,97,25) 88%, rgb(112,97,25) 91%,rgb(174,161,58) 91%, rgb(174,161,58) 100%),linear-gradient(157.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(176,173,69) 60%, rgb(176,173,69) 88%,rgb(112,97,25) 88%, rgb(112,97,25) 91%,rgb(174,161,58) 91%, rgb(174,161,58) 100%),linear-gradient(135deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(176,173,69) 60%, rgb(176,173,69) 88%,rgb(112,97,25) 88%, rgb(112,97,25) 91%,rgb(174,161,58) 91%, rgb(174,161,58) 100%),linear-gradient(90deg, rgb(195, 195, 195),rgb(228, 228, 228)); background-blend-mode:overlay,overlay,overlay,normal;;
+  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 }
 
 .card-front p {
   font-size: 25px;
-  color: black;
+  color: white;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
 }
 .card-back {
   transform: rotateY(180deg);
