@@ -734,12 +734,12 @@ const modalData = {
         input: `${bouton4}+${bouton2}`,
       },
     ],
-    link: 'https://www.youtube.com/embed/xzKNpVMDDfM'
-
+    link: "https://www.youtube.com/embed/xzKNpVMDDfM",
   },
   lightBowGun: {
     title: "LIGHT BOW GUN",
-    paragraph: "Mon Une arme qui excelle dans le combat à longue distance.Remplit une variété de rôles, du barrage à tir rapide aux altérations de statut infligées en fonction du type de munitions utilisées.",
+    paragraph:
+      "Mon Une arme qui excelle dans le combat à longue distance.Remplit une variété de rôles, du barrage à tir rapide aux altérations de statut infligées en fonction du type de munitions utilisées.",
     image: "./public/image/arme mhr/Bow_Icon_White.webp",
     combo: [
       {
@@ -783,13 +783,13 @@ const modalData = {
         input: `${bouton9}+${bouton4}`,
       },
     ],
-    link: 'https://www.youtube.com/embed/QzzbeOMHbxs'
-
+    link: "https://www.youtube.com/embed/QzzbeOMHbxs",
   },
 
   heavyBowGun: {
     title: "HEAVY BOW GUN",
-    paragraph: "Une puissante arme à distance aussi lourde en puissance de feu qu'en main. Peut être chargé avec des munitions Wyvernheart ou Wyvernsnipe selon la situation",
+    paragraph:
+      "Une puissante arme à distance aussi lourde en puissance de feu qu'en main. Peut être chargé avec des munitions Wyvernheart ou Wyvernsnipe selon la situation",
     image: "./public/image/arme mhr/Bow_Icon_White.webp",
     combo: [
       {
@@ -833,10 +833,10 @@ const modalData = {
         input: `Hold,${bouton9}+${bouton4}`,
       },
     ],
-    link: 'https://www.youtube.com/embed/LWOH83GSesM'
+    link: "https://www.youtube.com/embed/LWOH83GSesM",
   },
 };
-
+const cardData = document.getElementById("bowCard").src="1.png"
 modalTriggers.forEach((trigger) =>
   trigger.addEventListener("click", toggleModal)
 );
@@ -854,7 +854,6 @@ function toggleModal() {
     const modalCombo = document.getElementById("modal-combo");
     modalCombo.innerHTML = "";
     modalData[this.id].combo.forEach((combo) => {
-      console.log(combo);
       modalCombo.innerHTML =
         modalCombo.innerHTML +
         "<p>" +
@@ -865,6 +864,10 @@ function toggleModal() {
     });
     const modalLink = document.getElementById("modal-link");
     modalLink.src = modalData[this.id].link;
-    console.log(modalLink);
   }
 }
+function changeCard(){
+  document.getElementById("bowCard").src='./public/click/shift.png'
+  console.log('je fonctionne')
+;}
+
